@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+      <!-- Header content -->
+      <h1>My Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="section">
+      <!-- Section content will be loaded asynchronously -->
+    </section>
+    
+    <footer id="footer">
+      <!-- Footer content -->
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+  
+    <script>
+      // Function to load section content asynchronously
+      function loadSectionContent() {
+        // Simulate a delay for demonstration purposes
+        setTimeout(function() {
+          const section = document.getElementById("section");
+          section.innerHTML = "<h2>Section Content</h2><p>This is the dynamically loaded section content.</p>";
+        }, 2000); // 2 seconds delay
+      }
+  
+      // Load section content when the page is ready
+      document.addEventListener("DOMContentLoaded", function() {
+        loadSectionContent();
+      });
+    </script>
+  </body>
+</html>
