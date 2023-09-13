@@ -1,7 +1,7 @@
 import Create from "./views/Create.js";
 import Home from "./views/Home.js";
 import Profile from "./views/Profile.js";
-import GroceryService from "../services/GroceryService.js";
+import GroceryService from "./services/GroceryService.js";
 
 
 const navigateTo = url => {
